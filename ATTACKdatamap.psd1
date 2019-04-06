@@ -40,10 +40,10 @@
             Tags = @('DFIR', 'ThreatHunting')
 
             # What software license is your code being released under? (see https://opensource.org/licenses)
-            LicenseUri = ''
+            LicenseUri = 'https://github.com/olafhartong/ATTACKdatamap/blob/master/LICENSE'
 
             # What is the URL to your project's website?
-            ProjectUri = ''
+            ProjectUri = 'https://github.com/olafhartong/ATTACKdatamap'
 
             # What is the URI to a custom icon file for your project? (optional)
             IconUri = ''
