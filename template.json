@@ -1,0 +1,49 @@
+{
+    "name": "DataCoverage",
+	"version": "2.1",
+	"domain": "mitre-enterprise",
+	"description": "",
+	"filters": {
+		"stages": [
+			"act"
+		],
+		"platforms": [
+			"windows",
+			"linux",
+			"mac"
+		]
+	},
+	"sorting": 0,
+	"viewMode": 0,
+	"hideDisabled": false,
+    "techniques" : [],
+	"gradient": {
+		"colors": [
+			"#ffffff",
+			"#ace8fb",
+			"#76aad4",
+			"#1f3f64",
+			"#0c1b33"
+		],
+		"minValue": 0,
+		"maxValue": 2500
+	},
+	"legendItems": [
+		{
+			"label": "Low Coverage",
+			"color": "#ffffff"
+		},
+		{
+			"label": "Medium Coverage",
+			"color": "#76aad4"
+		},
+		{
+			"label": "Pretty Good Coverage",
+			"color": "#0c1b33"
+		}
+	],
+	"metadata": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true
+}
