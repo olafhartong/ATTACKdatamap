@@ -1,2 +1,2 @@
 # ATTACKdatamap
-A datasource assessment tool to map your potential ATT&amp;CK coverage
+A datasource assessment on an event level to show potential ATT&CK coverage
