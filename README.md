@@ -1,6 +1,7 @@
 # ATTACKdatamap
 A datasource assessment on an event level to show potential ATT&CK coverage
 
+More details in a blogpost [here](https://medium.com/@olafhartong/assess-your-data-potential-with-att-ck-datamap-f44884cfed11)
 
 # Start
 This tool requires module ImportExcel, Install it like this ```PS C:\> Install-Module ImportExcel```
@@ -22,15 +23,19 @@ This is all gathered into a JSON file which can be opened here;
 [MITRE ATT&CK Navigator/enterprise/](https://mitre-attack.github.io/attack-navigator/enterprise/)
 
 ## Invoke-ATTACK-UpdateExcel
-Generates MITRE ATT&CK relevant fields into a table and creates or updates a worksheet in an Excel sheet
+This generates all MITRE ATT&CK relevant fields into a table and creates or updates the REF-DataSources worksheet in an Excel sheet
 
 EXAMPLE
 
 ```PS C:\> Invoke-ATTACK-UpdateExcel -AttackPath .\enterprise-attack.json -Excelfile .\mitre_data_assessment.xlsx```
 
+The -AttackPath and -Excelfile parameters are optional
+
 ## Get-ATTACKdata
-Downloads the MITRE ATT&CK Enterprise JSON file
+This downloads the MITRE ATT&CK Enterprise JSON file
 
 EXAMPLE
 
 ```PS C:\> Get-ATTACKdata -AttackPath ./enterprise-attack.json```
+
+The -AttackPath parameter is optional
