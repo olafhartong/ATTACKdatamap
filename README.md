@@ -1,3 +1,8 @@
+[![license](https://img.shields.io/github/license/olafhartong/sysmon-modular.svg?style=flat-square)](https://github.com/olafhartong/sysmon-modular/blob/master/license.md)
+![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
+[![GitHub last commit](https://img.shields.io/github/last-commit/olafhartong/sysmon-modular.svg?style=flat-square)](https://github.com/olafhartong/sysmon-modular/commit/master)
+[![Twitter](https://img.shields.io/twitter/follow/olafhartong.svg?style=social&label=Follow)](https://twitter.com/olafhartong)
+
 # ATTACKdatamap
 A datasource assessment on an event level to show potential ATT&CK coverage
 
