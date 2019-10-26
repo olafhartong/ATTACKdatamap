@@ -1,6 +1,6 @@
 {
     "name": "DataCoverage",
-	"version": "2.1",
+	"version": "2.2",
 	"domain": "mitre-enterprise",
 	"description": "",
 	"filters": {
@@ -20,13 +20,14 @@
 	"gradient": {
 		"colors": [
 			"#ffffff",
-			"#ace8fb",
-			"#76aad4",
-			"#1f3f64",
+			"#edfbff",
+			"#d0f4ff",
+			"#b8daf5",
+			"#427ba9",
 			"#0c1b33"
 		],
 		"minValue": 0,
-		"maxValue": 2500
+		"maxValue": 2100
 	},
 	"legendItems": [
 		{
