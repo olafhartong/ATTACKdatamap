@@ -17,8 +17,10 @@
     # Which PowerShell functions are exported from your module? (eg. Get-CoolObject)
     FunctionsToExport = @(
         'Request-ATTACKjson',
-        'Invoke-ATTACK-UpdateExcel',
-        'Get-ATTACKdata'
+        'Invoke-ATTACKUpdateExcel',
+        'Get-ATTACKdata',
+        'Request-ApplicationJSON',
+        'Request-DefenseJSON'
     )
 
     
