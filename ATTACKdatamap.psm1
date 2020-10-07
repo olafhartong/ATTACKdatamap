@@ -76,7 +76,7 @@ function Invoke-ATTACKUpdateExcel {
         }
     
     Write-Host "[++] Updating your Data Source sheet" -ForegroundColor Cyan	
-    $Collection | Select-Object  @{Name ="ID"; Expression={$_.ID -split "," }},@{Name ="Name"; Expression={$_.Name -join ","}},@{Name="Data Source";Expression={$_.'Data Source' -join ","}},@{Name="Platforms";Expression={$_.'Platforms' -join ","}},@{Name="Detection";Expression={$_.'Detection' -join ","}},@{Name="Description";Expression={$_.'Description' -join ","}},@{Name="Tactic";Expression={$_.'Tactic' -join ","}},@{Name="Defense Bypassed";Expression={$_.'Defense Bypassed' -join ","}} | Sort-Object ID | Export-Excel $Excelfile -WorksheetName REF-DataSources      
+    $Collection | Select-Object  @{Name ="ID"; Expression={$_.ID | Select-Object -Index 0 }},@{Name ="Name"; Expression={$_.Name -join ","}},@{Name="Data Source";Expression={$_.'Data Source' -join ","}},@{Name="Platforms";Expression={$_.'Platforms' -join ","}},@{Name="Detection";Expression={$_.'Detection' -join ","}},@{Name="Description";Expression={$_.'Description' -join ","}},@{Name="Tactic";Expression={$_.'Tactic' -join ","}},@{Name="Defense Bypassed";Expression={$_.'Defense Bypassed' -join ","}} | Sort-Object ID | Export-Excel $Excelfile -WorksheetName REF-DataSources      
 }
 
 function Request-ATTACKjson {
