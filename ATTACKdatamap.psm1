@@ -70,12 +70,14 @@ function Invoke-ATTACKUpdateExcel {
             'Description' = $object.'description'
             'Tactic' = $object.'kill_chain_phases'.'phase_name'
             'Defense Bypassed' = $object.'x_mitre_defense_bypassed'
+            'Revoked' = $object.'revoked'
             }
         $TotalObjects = New-Object PSCustomObject -Property $Props
-        $Collection += $TotalObjects
+        if ($TotalObjects.Revoked -notcontains $true){
+            $Collection += $TotalObjects }
         }
     
-    Write-Host "[++] Updating your Data Source sheet" -ForegroundColor Cyan	
+    Write-Host "[++] Updating your Data Source sheet, this takes a few secs...." -ForegroundColor Cyan	
     $Collection | Select-Object  @{Name ="ID"; Expression={$_.ID | Select-Object -Index 0 }},@{Name ="Name"; Expression={$_.Name -join ","}},@{Name="Data Source";Expression={$_.'Data Source' -join ","}},@{Name="Platforms";Expression={$_.'Platforms' -join ","}},@{Name="Detection";Expression={$_.'Detection' -join ","}},@{Name="Description";Expression={$_.'Description' -join ","}},@{Name="Tactic";Expression={$_.'Tactic' -join ","}},@{Name="Defense Bypassed";Expression={$_.'Defense Bypassed' -join ","}} | Sort-Object ID | Export-Excel $Excelfile -WorksheetName REF-DataSources      
 }
 
