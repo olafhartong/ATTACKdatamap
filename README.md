@@ -15,6 +15,8 @@ This tool requires module ImportExcel, Install it like this ```PS C:\> Install-M
 
 Import the module with ```Import-Module .\ATTACKdatamap.psd1```
 
+OS X Only, ImportExcel Module Cannot Autosize by default, install: ```brew install mono-libgdiplus```
+
 ## Request-ATTACKjson
 Generates a JSON file to be imported into the ATT&CK Navigator. The mitre_data_assessment.xlsx file contains all Techniques, which can be updated via Invoke-ATTACK-UpdateExcel.
 
