@@ -29,12 +29,12 @@ EXAMPLE
 This is all gathered into a JSON file which can be opened here;
 [MITRE ATT&CK Navigator/enterprise/](https://mitre-attack.github.io/attack-navigator/enterprise/)
 
-## Invoke-ATTACK-UpdateExcel
+## Invoke-ATTACKUpdateExcel
 This generates all MITRE ATT&CK relevant fields into a table and creates or updates the REF-DataSources worksheet in an Excel sheet
 
 EXAMPLE
 
-```PS C:\> Invoke-ATTACK-UpdateExcel -AttackPath .\enterprise-attack.json -Excelfile .\mitre_data_assessment.xlsx```
+```PS C:\> Invoke-ATTACKUpdateExcel -AttackPath .\enterprise-attack.json -Excelfile .\mitre_data_assessment.xlsx```
 
 The -AttackPath and -Excelfile parameters are optional
 
